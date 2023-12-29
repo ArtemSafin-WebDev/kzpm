@@ -1,0 +1,210 @@
+.solutions {
+  @include blockWrapper;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 18rem;
+  padding-top: 16rem;
+
+  @include breakpoint(mobile) {
+    padding-bottom: 5rem;
+    padding-top: 3.2rem;
+  }
+}
+
+.solutions__content {
+  @include blockContent;
+  display: flex;
+  flex-direction: column;
+}
+
+.solutions__heading {
+  font-size: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106%;
+  letter-spacing: -0.7rem;
+  margin-bottom: 13.7rem;
+  max-width: 172rem;
+
+  b {
+    font-weight: inherit;
+    font-style: italic;
+    color: #6e51c5;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106%;
+    letter-spacing: -0.182rem;
+    margin-bottom: 3.2rem;
+    max-width: none;
+  }
+}
+
+.solutions__slider {
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+
+    @include breakpoint(mobile) {
+      width: calc(50% - 0.8rem / 2);
+      margin-right: 0.8rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include breakpointMF(small-tablet) {
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-gap: 4rem;
+    }
+  }
+}
+
+.solutions__slider-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 42.6rem;
+  padding: 4.2rem;
+  flex-grow: 1;
+  gap: 2rem;
+  justify-content: space-between;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 2rem;
+  background: #f1f2f8;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+      .solutions__slider-card-amount {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .solutions__slider-card-icon {
+        filter: brightness(700%);
+      }
+    }
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    min-height: 16.4rem;
+  }
+}
+
+.solutions__slider-card-icon {
+  margin-left: -3.4rem;
+  margin-top: -3.2rem;
+  width: 15rem;
+  height: 14rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: filter 0.2s;
+
+  @include breakpoint(mobile) {
+    margin: 0;
+    margin-bottom: -0.7rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.solutions__slider-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  @include breakpoint(mobile) {
+    gap: 0.5rem;
+  }
+}
+
+.solutions__slider-card-amount {
+  transition: color 0.2s;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.072rem;
+  color: rgba(21, 20, 22, 0.2);
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.036rem;
+    color: rgba(21, 20, 22, 0.3);
+  }
+}
+
+.solutions__slider-card-title {
+  font-size: 4.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.23rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.08rem;
+  }
+}
+
+.solutions__slider-more-wrapper {
+  margin-top: 6.2rem;
+  display: grid;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  grid-gap: 4rem;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 0.8rem;
+    margin-top: 2.8rem;
+  }
+}
+
+.solutions__slider-more-link {
+  font-size: 4.4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.22rem;
+
+  grid-column: 12 / -1;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.1rem;
+    grid-column: 2 / 3;
+    gap: 0.8rem;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(21, 20, 22, 0.2);
+    }
+  }
+}
