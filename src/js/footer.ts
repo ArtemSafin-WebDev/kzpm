@@ -12,18 +12,22 @@ export default function footer() {
   );
   if (!inner) return;
 
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: footer,
-  //       start: () => `top-=${window.innerHeight * 1} bottom`,
-  //       end: () => `top+=${window.innerHeight} bottom`,
-  //       scrub: true,
-  //     },
-  //   });
+  let mm = gsap.matchMedia();
 
-  //   tl.from(inner, {
-  //     y: -1 * window.innerHeight,
-  //     duration: 1,
-  //     ease: "none",
-  //   });
+  mm.add("(min-width: 641px)", () => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: footer,
+        start: () => `top bottom`,
+        end: () => `top+=${300} bottom`,
+        scrub: true,
+      },
+    });
+
+    tl.from(inner, {
+      y: -300,
+      duration: 1,
+      ease: "none",
+    });
+  });
 }

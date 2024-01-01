@@ -24,7 +24,8 @@ export default function numbers() {
         trigger: content,
         pin: contentWrapper,
         start: "bottom bottom",
-        end: () => `bottom+=${window.innerHeight * slides.length} bottom`,
+        end: () =>
+          `bottom+=${window.innerHeight * 0.75 * slides.length} bottom`,
         pinSpacing: true,
         scrub: true,
       },

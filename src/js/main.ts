@@ -13,6 +13,8 @@ import footer from "./footer";
 import introSlider from "./introSlider";
 import header from "./header";
 import intro from "./intro";
+import geography from "./geography";
+import contacts from "./contacts";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -28,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
   secret();
   numbers();
   footer();
+  geography();
+  contacts();
 });
 
 window.addEventListener("load", () => {
