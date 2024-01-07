@@ -24,9 +24,14 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.32",
     "@studio-freight/lenis": "^1.0.29",
+    "cannon-es": "^0.18.0",
+    "dat.gui": "^0.7.7",
     "gsap": "^3.12.4",
     "inputmask": "^5.0.8",
+    "kyouka": "^1.2.5",
+    "postprocessing": "^6.22.2",
     "swiper": "^11.0.5",
+    "three": "^0.124.0",
     "validator": "^13.11.0"
   }
 }

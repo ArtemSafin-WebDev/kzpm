@@ -15,6 +15,7 @@ import header from "./header";
 import intro from "./intro";
 import geography from "./geography";
 import contacts from "./contacts";
+import balls from "./balls";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   footer();
   geography();
   contacts();
+  balls();
 });
 
 window.addEventListener("load", () => {
