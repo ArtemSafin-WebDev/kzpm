@@ -91,7 +91,7 @@ export default function balls() {
   const array2Point = (arr) => new Point({ x: arr[0], y: arr[1], z: arr[2] });
 
   // 点转化为数组
-  const point2Array = (point) => [point.x, point.y, point.z];
+  // const point2Array = (point) => [point.x, point.y, point.z];
 
   // 多个数组转化为多个点
   const arrays2Point = (arrs) => arrs.map((item) => array2Point(item));
@@ -297,7 +297,7 @@ export default function balls() {
     }
     // 监听画面缩放
     onResize() {
-      window.addEventListener("resize", (e) => {
+      window.addEventListener("resize", () => {
         const aspect = calcAspect(this.container);
         const camera = this.camera as THREE.PerspectiveCamera;
         camera.aspect = aspect;
