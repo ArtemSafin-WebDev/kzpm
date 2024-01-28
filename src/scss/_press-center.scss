@@ -199,6 +199,8 @@
   height: auto;
   transition: opacity 0.4s, visibility 0s linear 0.4s;
   z-index: 5;
+  opacity: 0;
+  visibility: hidden;
 
   &.active {
     opacity: 1;

@@ -1,0 +1,9 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M42.8421 42.8421V29.9453H53.1596V42.8421L65.3286 59.8789C65.802 60.5414 66.0564 61.3353 66.0564 62.1498C66.0564 64.3073 64.3073 66.0564 62.1498 66.0564H33.8521C31.6944 66.0564 29.9453 64.3073 29.9453 62.1498C29.9453 61.3353 30.1997 60.5414 30.673 59.8789L42.8421 42.8421Z"
+        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+    <path d="M36.1953 51.4727H59.8064" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M40.3594 29.9453H55.6372" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+</svg>

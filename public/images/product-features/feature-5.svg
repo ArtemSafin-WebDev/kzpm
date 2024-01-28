@@ -1,0 +1,24 @@
+<svg width="135" height="135" viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M26.6406 95.7863C26.6406 95.7863 39.2121 83.2148 67.4978 83.2148C95.7835 83.2148 108.355 95.7863 108.355 95.7863"
+        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+    <path d="M67.5 83.2148V108.358" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M39.2109 108.361L61.2109 83.4062" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M95.7812 108.361L73.7812 83.4062" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path
+        d="M45.7476 70.6429C45.6518 69.5974 45.6518 68.5454 45.7476 67.5C45.7476 61.6652 48.0655 56.0694 52.1913 51.9437C56.3171 47.8179 61.9128 45.5 67.7476 45.5C73.5824 45.5 79.1782 47.8179 83.3039 51.9437C87.4301 56.0694 89.7476 61.6652 89.7476 67.5C89.8432 68.5454 89.8432 69.5974 89.7476 70.6429"
+        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+    <path d="M26.6406 67.5H32.9263" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M39.2109 39.2148L42.3538 42.3577" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M67.5 26.6445V32.9302" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M95.7835 39.2148L92.6406 42.3577" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+    <path d="M108.356 67.5H102.07" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        vector-effect="non-scaling-stroke" />
+</svg>
