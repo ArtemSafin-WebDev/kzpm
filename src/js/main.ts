@@ -19,6 +19,7 @@ import balls from "./balls";
 import tabs from "./tabs";
 import othersSlider from "./othersSlider";
 import menu from "./menu";
+import newsSlider from "./newsSlider.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   tabs();
   othersSlider();
   menu();
+  newsSlider();
 });
 
 window.addEventListener("load", () => {
