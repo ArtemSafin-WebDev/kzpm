@@ -259,6 +259,21 @@
   }
 }
 
+.press-center__card-logo {
+  max-width: 12rem;
+  padding: 0.9rem 1.4rem;
+  margin-bottom: 2.8rem;
+  border-radius: 0.7rem;
+  background-color: rgba(#151416, 0.4);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 .press-center__card-title {
   font-size: 3.6rem;
   font-style: normal;

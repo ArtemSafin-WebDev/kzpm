@@ -24,6 +24,11 @@
                             Сми о нас
                         </a>
                     </li>
+                    <li class="news__categories-list-item">
+                        <a href="#" class="news__categories-link">
+                            Медиагалерея
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="news__social">
@@ -51,11 +56,14 @@
         <ul class="news__list">
             <li class="news__list-item">
                 <a href="#" class="press-center__card">
+                    <div class="press-center__card-logo">
+                        <img src="images/news/logo.png" alt="logo">
+                    </div>
                     <h3 class="press-center__card-title">
                         ООО «КЗПМ» информирует о смене генерального директора
                     </h3>
                     <div class="press-center__card-date">
-                        03 июнь
+                        03 июн
                     </div>
                     <div class="press-center__card-info">
                         Новости / 2022
@@ -101,31 +109,16 @@
                     </div>
                 </a>
             </li>
-            <li class="news__list-item">
-                <a href="#" class="press-center__card">
-                    <h3 class="press-center__card-title">
-                        Чем КЗПМ порадует гостей выставки interplastica 2022?
-                    </h3>
-                    <div class="press-center__card-date">
-                        29 авг
-                    </div>
-                    <div class="press-center__card-info">
-                        Новости / 2022
-                    </div>
-                </a>
-            </li>
-            <li class="news__list-item">
-                <a href="#" class="press-center__card">
-                    <h3 class="press-center__card-title">
-                        Легкоплавкая и тисненая пленка КЗПМ — тандем для шинной промышленности
-                    </h3>
-                    <div class="press-center__card-date">
-                        04 окт
-                    </div>
-                    <div class="press-center__card-info">
-                        Новости / 2022
-                    </div>
-                </a>
+            <li class="news__list-item news__list-item--form">
+                <div class="subscription-form">
+                    <img class="subscription-form__bg" src="images/news/form-bg.png" alt="">
+                    <h3 class="subscription-form__heading">Подпишитесь на&nbsp;новостную рассылку</h3>
+                    <p class="subscription-form__text">Подпишитесь на наши новости, чтобы быть в курсе последних событий и полезных показателей компании.</p>
+                    <form action="/" method="POST" class="subscription-form__form">
+                        <input required name="email" class="subscription-form__input" type="email" placeholder="Почта">
+                        <button class="subscription-form__submit" type="submit">Отправить</button>
+                    </form>
+                </div>
             </li>
             <li class="news__list-item">
                 <a href="#" class="press-center__card">
