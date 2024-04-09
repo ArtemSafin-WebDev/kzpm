@@ -20,6 +20,9 @@ import tabs from "./tabs";
 import othersSlider from "./othersSlider";
 import menu from "./menu";
 import newsSlider from "./newsSlider.ts";
+import career from "./career.ts";
+import ourTeamSlider from "./ourTeamSlider.ts";
+import careerGallery from "./careerGallery.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -42,6 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
   othersSlider();
   menu();
   newsSlider();
+  career();
+  ourTeamSlider();
+  careerGallery();
 });
 
 window.addEventListener("load", () => {
