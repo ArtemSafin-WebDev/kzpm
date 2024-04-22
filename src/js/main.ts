@@ -23,6 +23,7 @@ import newsSlider from "./newsSlider.ts";
 import career from "./career.ts";
 import ourTeamSlider from "./ourTeamSlider.ts";
 import careerGallery from "./careerGallery.ts";
+import modals from "./modals.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   career();
   ourTeamSlider();
   careerGallery();
+  modals();
 });
 
 window.addEventListener("load", () => {
