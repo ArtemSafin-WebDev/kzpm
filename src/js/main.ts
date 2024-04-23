@@ -24,6 +24,9 @@ import career from "./career.ts";
 import ourTeamSlider from "./ourTeamSlider.ts";
 import careerGallery from "./careerGallery.ts";
 import modals from "./modals.ts";
+import selects from "./selects.ts";
+import fileUpload from "./fileUpload.ts";
+import forms from "./forms.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -50,6 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ourTeamSlider();
   careerGallery();
   modals();
+  selects();
+  fileUpload();
+  forms();
 });
 
 window.addEventListener("load", () => {

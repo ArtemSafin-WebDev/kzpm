@@ -100,12 +100,125 @@
                     </ul>
                 </div>
             </div>
-            <a href="#" class="career-modal__link">
+            <a href="#career-form-modal" class="career-modal__link">
                 <span class="career-modal__link-icon">
                     →
                 </span>
                 Откликнуться
             </a>
+        </div>
+    </div>
+</div>
+<div class="career-modal js-modal" id="career-form-modal" data-lenis-prevent="">
+    <div class="career-modal__inner career-modal__inner--form">
+        <button class="career-modal__close js-modal-close">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="39.5" stroke="currentColor" stroke-dasharray="6 6" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M42.1195 40L53.0588 29.0607L50.9375 26.9393L39.9982 37.8787L29.0588 26.9393L26.9375 29.0607L37.8768 40L26.9375 50.9393L29.0588 53.0606L39.9982 42.1213L50.9375 53.0606L53.0588 50.9393L42.1195 40Z"
+                    fill="currentColor" />
+            </svg>
+        </button>
+        <div class="career-modal__top">
+
+            <h3 class="career-modal__title">
+                Заполните форму и мы рассмотрим вашу заявку в ближайшее время
+            </h3>
+
+        </div>
+        <div class="career-modal__bottom career-modal__bottom--grey">
+            <form action="/" method="POST" class="career-modal__form js-form">
+                <div class="career-modal__form-fields">
+                    <div class="career-modal__form-field">
+                        <div class="career-modal__form-input-wrapper">
+                            <input type="text" class="career-modal__form-input" placeholder="Имя" required="">
+                        </div>
+                    </div>
+                    <div class="career-modal__form-field">
+                        <div class="career-modal__form-input-wrapper">
+                            <input type="tel" class="career-modal__form-input" placeholder="Телефон" required="">
+                        </div>
+                    </div>
+                    <div class="career-modal__form-field">
+                        <div class="career-modal__form-input-wrapper">
+                            <input type="email" class="career-modal__form-input" placeholder="Почта" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="career-modal__form-select js-select" data-placeholder="Город" data-required-select="">
+                    <button class="career-modal__form-select-btn" type="button">
+                        <span class="career-modal__form-select-btn-text">
+                            Город
+                        </span>
+                        <svg width="14" height="14" aria-hidden="true">
+                            <use xlink:href="#select-arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="career-modal__form-select-dropdown">
+                        <div class="career-modal__form-select-dropdown-inner">
+                            <label class="career-modal__form-select-checkbox">
+                                <input type="radio" name="city" value="Нижнекамск"
+                                    class="career-modal__form-select-checkbox-input">
+
+                                <span class="career-modal__form-select-checkbox-mark">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="career-modal__form-select-checkbox-text">
+                                    Нижнекамск
+                                </span>
+                            </label>
+                            <label class="career-modal__form-select-checkbox">
+                                <input type="radio" name="city" value="Казань"
+                                    class="career-modal__form-select-checkbox-input">
+
+                                <span class="career-modal__form-select-checkbox-mark">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="career-modal__form-select-checkbox-text">
+                                    Казань
+                                </span>
+                            </label>
+                            <label class="career-modal__form-select-checkbox">
+                                <input type="radio" name="city" value="Тобольск"
+                                    class="career-modal__form-select-checkbox-input">
+
+                                <span class="career-modal__form-select-checkbox-mark">
+                                    <svg width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="career-modal__form-select-checkbox-text">
+                                    Тобольск
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <label class="career-modal__form-file js-file-upload">
+                    <input type="file" class="career-modal__form-file-input">
+                    <svg width="14" height="14" aria-hidden="true">
+                        <use xlink:href="#file"></use>
+                    </svg>
+                    <span class="career-modal__form-file-text">
+                        <span class="career-modal__form-file-text-inner js-file-upload-text">
+                            Прикрепить анкету.pdf
+                        </span>
+                    </span>
+                </label>
+                <button class="career-modal__form-submit" type="submit">
+                    Отправить отклик
+                </button>
+                <div class="career-modal__form-success">
+                    Форма успешно отправлена
+                </div>
+                <div class="career-modal__form-error">
+                    Произошла ошибка при отправке
+                </div>
+            </form>
         </div>
     </div>
 </div>

@@ -24,6 +24,7 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.32",
     "@studio-freight/lenis": "^1.0.29",
+    "axios": "^1.6.8",
     "cannon-es": "^0.18.0",
     "dat.gui": "^0.7.7",
     "gsap": "^3.12.4",
