@@ -43,6 +43,16 @@ export default function forms() {
           })
           .finally(() => {
             if (submitBtn) submitBtn.disabled = false;
+
+            // Обновляем токены капчи
+            // @ts-ignore
+            if (window.widgets && window.grecaptcha) {
+              // @ts-ignore
+              window.widgets.forEach(widgetId => {
+                // @ts-ignore
+                window.grecaptcha.reset(widgetId);
+              })
+            }
           });
       }
     };
