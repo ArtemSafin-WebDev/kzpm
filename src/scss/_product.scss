@@ -338,6 +338,14 @@
   object-fit: contain;
   left: 0;
   top: 0;
+
+  @include breakpointMF(small-tablet) {
+    width: 87rem;
+    height: 87rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .product__features {
   display: contents;
