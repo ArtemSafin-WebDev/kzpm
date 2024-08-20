@@ -482,12 +482,13 @@
 .contacts__departments-card-phones {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 3.2rem;
   grid-column: 13 / -1;
 
   @include breakpoint(mobile) {
     gap: 0.8rem;
+    align-items: flex-start;
   }
 }
 

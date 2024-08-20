@@ -97,6 +97,12 @@
   flex-direction: column;
   gap: 5rem;
 
+  .validation-error {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+
   @include breakpoint(mobile) {
     gap: 1rem;
   }
@@ -248,6 +254,12 @@
   display: block;
   letter-spacing: -0.364rem;
 
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
   @include breakpoint(mobile) {
     font-size: 1.8rem;
     font-style: normal;
@@ -307,6 +319,11 @@
   font-weight: 400;
   line-height: 110%;
   letter-spacing: -0.364rem;
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
 
   @include breakpoint(mobile) {
     font-size: 1.8rem;
@@ -371,6 +388,12 @@
   line-height: 130%;
   letter-spacing: -0.078rem;
 
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
   @include breakpoint(mobile) {
     font-size: 1.2rem;
     font-style: normal;
@@ -399,6 +422,11 @@
   font-weight: 400;
   line-height: 130%;
   letter-spacing: -0.078rem;
+  @media (hover: hover) {
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
 
   @include breakpoint(mobile) {
     font-size: 1.2rem;

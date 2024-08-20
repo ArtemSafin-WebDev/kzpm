@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: min(100vh, 160rem);
+  min-height: 160rem;
 
   @include breakpoint(mobile) {
     min-height: 82rem;
@@ -31,6 +31,21 @@
     bottom: 11rem;
     height: 70%;
     top: auto;
+  }
+}
+
+.intro__bg-video-wrapper {
+  position: absolute;
+  inset: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #9b79ff;
+
+    mix-blend-mode: overlay;
+    opacity: 1;
   }
 }
 

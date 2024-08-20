@@ -27,6 +27,7 @@ import modals from "./modals.ts";
 import selects from "./selects.ts";
 import fileUpload from "./fileUpload.ts";
 import forms from "./forms.ts";
+import joinSlider from "./joinSlider.ts";
 
 document.addEventListener("DOMContentLoaded", () => {
   smoothScrolling();
@@ -56,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   selects();
   fileUpload();
   forms();
+  joinSlider();
 });
 
 window.addEventListener("load", () => {

@@ -48,10 +48,10 @@ export default function forms() {
             // @ts-ignore
             if (window.widgets && window.grecaptcha) {
               // @ts-ignore
-              window.widgets.forEach(widgetId => {
+              window.widgets.forEach((widgetId) => {
                 // @ts-ignore
                 window.grecaptcha.reset(widgetId);
-              })
+              });
             }
           });
       }

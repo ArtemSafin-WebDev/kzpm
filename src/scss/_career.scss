@@ -1267,7 +1267,7 @@
 }
 
 @include breakpointMF(small-tablet) {
-  .swiper:has(.swiper-slide:nth-child(1).active) {
+  .swiper[data-active-card="1"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: translate(60rem, 70rem) scale(2.2);
     }
@@ -1296,7 +1296,7 @@
       transform: translateX(15rem) scale(0.9);
     }
   }
-  .swiper:has(.swiper-slide:nth-child(2).active) {
+  .swiper[data-active-card="2"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.9) translateY(6rem);
     }
@@ -1328,7 +1328,7 @@
       transform: scale(0.7) translateX(-8rem);
     }
   }
-  .swiper:has(.swiper-slide:nth-child(3).active) {
+  .swiper[data-active-card="3"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.8) translateX(5rem) translateY(7rem);
     }
@@ -1360,7 +1360,7 @@
       transform: scale(0.8) translateX(-8rem);
     }
   }
-  .swiper:has(.swiper-slide:nth-child(4).active) {
+  .swiper[data-active-card="4"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.9) translateY(4rem) translateX(4rem);
     }
@@ -1393,7 +1393,7 @@
     }
   }
 
-  .swiper:has(.swiper-slide:nth-child(5).active) {
+  .swiper[data-active-card="5"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.9) translateY(4rem) translateX(4rem);
     }
@@ -1425,7 +1425,7 @@
       transform: scale(0.8) translateY(-12rem) translateX(-8rem);
     }
   }
-  .swiper:has(.swiper-slide:nth-child(6).active) {
+  .swiper[data-active-card="6"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.8) translateY(2rem) translateX(7rem);
     }
@@ -1458,7 +1458,7 @@
     }
   }
 
-  .swiper:has(.swiper-slide:nth-child(7).active) {
+  .swiper[data-active-card="7"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.8) translateX(5rem) translateY(8rem);
     }
@@ -1491,7 +1491,7 @@
     }
   }
 
-  .swiper:has(.swiper-slide:nth-child(8).active) {
+  .swiper[data-active-card="8"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.8) translateX(5rem) translateY(14rem);
     }
@@ -1524,7 +1524,7 @@
     }
   }
 
-  .swiper:has(.swiper-slide:nth-child(9).active) {
+  .swiper[data-active-card="9"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.8) translateX(5rem) translateY(14rem);
     }
@@ -1557,7 +1557,7 @@
     }
   }
 
-  .swiper:has(.swiper-slide:nth-child(10).active) {
+  .swiper[data-active-card="10"] {
     .swiper-slide:nth-child(1) .career__our-team-slider-card {
       transform: scale(0.8) translateX(5rem) translateY(14rem);
     }

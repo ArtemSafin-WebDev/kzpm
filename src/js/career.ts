@@ -7,8 +7,9 @@ export default function career() {
     const cards = Array.from(
       element.querySelectorAll<HTMLElement>(".swiper-slide")
     );
+    const parent = element.querySelector(".swiper");
 
-    cards.forEach((card) => {
+    cards.forEach((card, cardIndex) => {
       card.addEventListener("mouseenter", () => {
         cards.forEach((card) => {
           card.classList.remove("active");
@@ -21,6 +22,8 @@ export default function career() {
           }
         });
         card.classList.add("active");
+
+        parent.setAttribute("data-active-card", (cardIndex + 1).toString());
       });
     });
   });
