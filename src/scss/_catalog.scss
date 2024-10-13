@@ -273,12 +273,13 @@
 
 .catalog__products-card-image-container {
   position: relative;
-  margin: 0 -4rem;
-  margin-top: -2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
 
   @include breakpoint(mobile) {
-    margin: 0 -1.5rem;
-    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
   }
   &::before {
     content: "";

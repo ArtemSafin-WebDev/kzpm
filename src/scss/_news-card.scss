@@ -13,7 +13,7 @@
     &:hover {
       background-color: var(--primary-color);
       color: white;
-      .news-card__date {
+      .news-card__title {
         color: white;
       }
     }
@@ -49,6 +49,8 @@
   line-height: 120%;
   letter-spacing: -0.18rem;
   margin-bottom: auto;
+  color: var(--primary-color);
+  transition: color 0.2s;
 
   @include breakpoint(mobile) {
     font-size: 1.6rem;
@@ -67,8 +69,6 @@
   font-weight: 400;
   line-height: 106%;
   letter-spacing: -0.7rem;
-  color: var(--primary-color);
-  transition: color 0.2s;
 
   @include breakpoint(mobile) {
     font-size: 2.6rem;
