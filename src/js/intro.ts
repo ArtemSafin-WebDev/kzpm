@@ -14,6 +14,13 @@ export default function intro() {
       layers.forEach((layer) => layer.classList.remove("active"));
       links[index]?.classList.add("active");
       layers[index]?.classList.add("active");
+
+      const video = layers[index].querySelector<HTMLVideoElement>('.js-bg-video')
+      if (video) {
+        if (!video.src) {
+          video.src = video.getAttribute('data-src');
+        }
+      }
     };
 
     setActiveItem(0);

@@ -311,7 +311,7 @@ export default function balls() {
     }
     // 动画
     update() {
-      console.log("animation");
+
     }
     // 渲染
     setLoop() {

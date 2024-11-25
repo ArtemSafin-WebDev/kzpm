@@ -20,8 +20,6 @@ export default function forms() {
       if (!formValidator || !form) return;
       formValidator.validate();
 
-      console.log("Validated", formValidator.valid);
-
       if (formValidator.valid) {
         const formData = new FormData(form);
         if (submitBtn) submitBtn.disabled = true;
@@ -32,9 +30,7 @@ export default function forms() {
               "Content-Type": "multipart/form-data",
             },
           })
-          .then((res) => {
-            console.log(res.data);
-
+          .then(() => {
             form.classList.add("form-success");
           })
           .catch((err) => {

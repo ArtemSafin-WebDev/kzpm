@@ -16,8 +16,6 @@ export default function geography() {
       event.preventDefault();
       elements.forEach((element) => element.classList.remove("active"));
       marker.parentElement?.classList.add("active");
-
-      console.log("Clicked");
     });
 
     closeBtn?.addEventListener("click", (event) => {

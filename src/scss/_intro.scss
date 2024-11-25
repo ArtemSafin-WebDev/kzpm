@@ -38,7 +38,7 @@
   position: absolute;
   inset: 0;
 
-  &::after {
+  &.--overlay::after {
     content: "";
     position: absolute;
     inset: 0;

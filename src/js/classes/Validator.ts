@@ -70,10 +70,6 @@ class Validator {
     ) {
       this.locale = "ru";
     } else {
-      console.log(
-        "Setting en locale",
-        document.documentElement.lang.toLowerCase()
-      );
       this.locale = "en";
     }
     this.textFields = Array.from(
@@ -266,9 +262,7 @@ class Validator {
   }
 
   validateCheckbox(checkbox: HTMLInputElement): ValidationError | null {
-    console.log("Validation checkkbox", checkbox);
     if (!checkbox.checked && checkbox.hasAttribute("required")) {
-      console.log("Checkbox not valid");
       this.errors.push({
         element: checkbox,
         message: this.localization[this.locale].requiredField,

@@ -78,7 +78,6 @@ export default function smoothScrolling() {
       if (!hash) return;
       const element = document.querySelector(hash);
       if (element) {
-        console.log("Start element", element);
         if (element.matches(".js-modal")) return;
         document.body.classList.remove("menu-open");
         gsap.to(window, {

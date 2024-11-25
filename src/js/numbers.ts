@@ -42,7 +42,6 @@ export default function numbers() {
                 window.getComputedStyle(slide).getPropertyValue("margin-right")
               ))
         );
-        console.log("Slides length", slidesLength);
         if (container.offsetWidth >= slidesLength) {
           return 0;
         } else {
