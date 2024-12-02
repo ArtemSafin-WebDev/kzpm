@@ -1,3 +1,5 @@
+import balls from "./balls.ts";
+
 export default function intro() {
   const elements = Array.from(document.querySelectorAll<HTMLElement>(".intro"));
 
@@ -15,11 +17,32 @@ export default function intro() {
       links[index]?.classList.add("active");
       layers[index]?.classList.add("active");
 
+      // Включаем/отключаем видео
       const video = layers[index].querySelector<HTMLVideoElement>('.js-bg-video')
       if (video) {
-        if (!video.src) {
+        if (video.src) {
+          video.play();
+        } else {
           video.src = video.getAttribute('data-src');
         }
+      } else {
+        const allVideos = element.querySelectorAll<HTMLVideoElement>('.js-bg-video');
+        allVideos.forEach(v => {
+          if (v.src) {
+            v.pause();
+          }
+        })
+      }
+
+      // Включаем/отключаем шарики
+      const ballsElement = layers[index].querySelector<HTMLElement>('.js-bg-balls');
+      if (ballsElement) {
+        balls();
+      } else {
+        const allBalls = element.querySelectorAll<HTMLElement>('.js-bg-balls canvas');
+        allBalls.forEach(b => {
+          b.remove();
+        })
       }
     };
 

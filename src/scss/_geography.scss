@@ -104,14 +104,56 @@
 }
 
 .geography__map-point-marker {
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  background-image: url("../images/point.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
   cursor: pointer;
+
+  &::before {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../images/point.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+
+    display: block;
+    width: max-content;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    content: attr(data-label);
+
+    @include breakpoint(mobile) {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  &.--left::after {
+    left: unset;
+    right: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.--right::after {
+    left: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   @include breakpoint(mobile) {
     width: 3rem;
@@ -171,9 +213,8 @@
     display: flex;
     flex-direction: column;
     min-height: 40rem;
-    gap: 3.2rem;
     padding: 4rem;
-    width: 40rem;
+    width: 44rem;
   }
 
   @include breakpoint(mobile) {
@@ -186,6 +227,15 @@
     flex-direction: column;
     position: relative;
     padding-right: 8rem;
+  }
+}
+
+.geography__map-point-label {
+  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
   }
 }
 
@@ -207,6 +257,7 @@
 }
 
 .geography__map-point-address {
+  margin-top: 2.4rem;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -222,11 +273,27 @@
     font-weight: 400;
     line-height: 130%;
     letter-spacing: -0.036rem;
-    margin-bottom: 3.6rem;
+
+    &:not(:last-child) {
+      margin-bottom: 3.6rem;
+    }
   }
 }
 
-.geography__map-point-phone {
+.geography__map-point-contact {
+  margin-top: 2rem;
+}
+
+.geography__map-point-contact-name {
+  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+  }
+}
+
+.geography__map-point-contact-phone {
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -244,13 +311,20 @@
 
 .geography__map-cities {
   position: absolute;
-  right: 11rem;
-  bottom: 31rem;
+  right: 24rem;
+  top: 40rem;
   z-index: 10;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  width: 46rem;
+  width: 57.2rem;
+
+  @include breakpointMF(small-tablet) {
+    padding: 5.6rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(#6E51C5, 0.15);
+    background-color: white;
+  }
 
   @include breakpoint(mobile) {
     gap: 2rem;

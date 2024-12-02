@@ -15,7 +15,6 @@ import header from "./header";
 import intro from "./intro";
 import geography from "./geography";
 import contacts from "./contacts";
-import balls from "./balls";
 import tabs from "./tabs";
 import othersSlider from "./othersSlider";
 import menu from "./menu";
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   footer();
   geography();
   contacts();
-  balls();
   tabs();
   othersSlider();
   menu();
