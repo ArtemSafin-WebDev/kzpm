@@ -54,6 +54,9 @@
     }
 
     &:last-child {
+      color: #0009;
+      pointer-events: none;
+
       &::after {
         display: none;
       }
@@ -182,7 +185,7 @@
 
 .news__list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-gap: 4rem;
 
   @include breakpoint(mobile) {
@@ -194,14 +197,6 @@
 .news__list-item {
   display: flex;
   flex-direction: column;
-
-  &--form {
-    grid-column: span 2;
-
-    @include breakpoint(mobile) {
-      grid-column: span 1;
-    }
-  }
 }
 
 .news__load-more-wrapper {
@@ -242,7 +237,7 @@
 }
 
 .news__mass-media {
-  margin-top: 20rem;
+  margin-top: 12rem;
 
   @include breakpoint(mobile) {
     margin-top: 5rem;

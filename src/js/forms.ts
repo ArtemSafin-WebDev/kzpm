@@ -30,11 +30,22 @@ export default function forms() {
               "Content-Type": "multipart/form-data",
             },
           })
-          .then(() => {
-            form.classList.add("form-success");
+          .then(({data}) => {
+            if (data.status === "success") {
+              form.classList.add("form-success");
+              // @ts-ignore
+              window.openModal("#success");
+              form.reset();
+            } else {
+              form.classList.add("form-error");
+              // @ts-ignore
+              window.openModal("#error");
+            }
           })
           .catch((err) => {
             form.classList.add("form-error");
+            // @ts-ignore
+            window.openModal("#error");
             console.error(err);
           })
           .finally(() => {

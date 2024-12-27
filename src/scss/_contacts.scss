@@ -57,6 +57,9 @@
     }
 
     &:last-child {
+      color: #0009;
+      pointer-events: none;
+
       &::after {
         display: none;
       }

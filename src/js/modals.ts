@@ -2,6 +2,23 @@ export default function modals() {
   const OPEN_BTN_SELECTOR = "a[href^='#']";
   const CLOSE_BTN_SELECTOR = ".js-modal-close";
 
+  const openModal = (hash: String, event: MouseEvent) => {
+    const modal = document.querySelector<HTMLElement>(`.js-modal${hash}`);
+    if (modal) document.body.classList.remove("menu-open");
+    if (event) {
+      event.preventDefault();
+    }
+    const otherModals = Array.from(
+        document.querySelectorAll<HTMLElement>(".js-modal")
+    );
+    otherModals.forEach((modal) => modal.classList.remove("active"));
+    modal?.classList.add("active");
+    document.body.classList.add("modal-open");
+  }
+
+  // @ts-ignore
+  window.openModal = openModal;
+
   document.addEventListener("click", (event) => {
     const target = event.target as HTMLElement;
     if (
@@ -14,17 +31,10 @@ export default function modals() {
       if (!btn) return;
       const hash = btn.hash;
       if (!hash) return;
-      const modal = document.querySelector<HTMLElement>(`.js-modal${hash}`);
-      if (modal) document.body.classList.remove("menu-open");
-      event.preventDefault();
-      const otherModals = Array.from(
-        document.querySelectorAll<HTMLElement>(".js-modal")
-      );
-      otherModals.forEach((modal) => modal.classList.remove("active"));
-      modal?.classList.add("active");
-      document.body.classList.add("modal-open");
+      openModal(hash, event);
     }
   });
+
   document.addEventListener("click", (event) => {
     const target = event.target as HTMLElement;
     if (

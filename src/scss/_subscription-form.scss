@@ -1,12 +1,13 @@
 .subscription-form {
+  margin-top: 10rem;
   position: relative;
-  padding: 8rem;
-  height: 100%;
+  padding: 6rem;
   background-color: #6E51C5;
   color: #fff;
   border-radius: 2rem;
 
   @include breakpoint(mobile) {
+    margin-top: 5rem;
     padding: 2rem;
   }
 }
@@ -23,7 +24,6 @@
 
 .subscription-form__heading {
   margin-bottom: 4.8rem;
-  max-width: 95rem;
 
   font-size: 8rem;
   line-height: 1;
@@ -37,8 +37,7 @@
 }
 
 .subscription-form__text {
-  margin-bottom: 7rem;
-  max-width: 78rem;
+  margin-bottom: 2rem;
   font-size: 2.6rem;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -92,8 +91,7 @@
   background: white;
   color: var(--primary-color);
   transition: background-color 0.2s, color 0.2s;
-  margin-top: 9rem;
-  text-align: center;
+  margin-top: 5rem;
   justify-content: center;
   align-items: center;
   @include breakpoint(mobile) {

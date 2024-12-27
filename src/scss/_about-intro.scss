@@ -41,6 +41,7 @@
     letter-spacing: -0.098rem;
     margin-bottom: 2rem;
   }
+
   a {
     color: black;
 
@@ -59,6 +60,9 @@
     }
 
     &:last-child {
+      color: #0009;
+      pointer-events: none;
+
       &::after {
         display: none;
       }

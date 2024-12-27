@@ -14,9 +14,10 @@
   transition: opacity 0.4s, visibility 0s linear 0.4s;
   opacity: 0;
   visibility: hidden;
+  padding-top: 7.5rem;
 
   @include breakpointMF(small-tablet) {
-    padding-top: 2rem;
+    padding-top: 15rem;
     padding-bottom: 2rem;
     @include blockWrapper;
   }
