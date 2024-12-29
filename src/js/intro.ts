@@ -49,10 +49,6 @@ export default function intro() {
     setActiveItem(0);
 
     links.forEach((link, linkIndex) => {
-      link.addEventListener("mouseenter", () => {
-        setActiveItem(linkIndex);
-      });
-
       link.addEventListener("click", (event) => {
         event.preventDefault();
         setActiveItem(linkIndex);
