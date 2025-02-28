@@ -310,9 +310,7 @@ export default function balls() {
       });
     }
     // 动画
-    update() {
-
-    }
+    update() {}
     // 渲染
     setLoop() {
       this.renderer.setAnimationLoop(() => {
@@ -455,7 +453,7 @@ export default function balls() {
       return obj;
     }
     // 创建一堆球
-    createBalls(count = 64) {
+    createBalls(count = 32) {
       const balls = [...Array(count).keys()].map(() => {
         const scale = ky.randomNumberInRange(0.5, 1);
         const ball = this.createBall({
